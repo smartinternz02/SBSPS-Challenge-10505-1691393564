@@ -1,137 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+    <title>SYSTEM</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
-    <title>Plug & Power: EV Charging Guide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <h1>Plug & Power: Revolutionizing The Road</h1>
-        <p>A Complete Guide To Electric Vehicle Charging Stations</p>
-    </header>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <!-- Navigation Bar -->
+    <div class="Navigation-Bar">
+    <div style="position: fixed; top: 0; left: 0; padding: 0px;">
+        <img class="asset7" src="images\asset 0.svg" alt="ChargeLink Logo"><b>Electric Charging Satations</b>
+    </div>
+        <a href="#map"  class="w3-bar-item w3-button w3-right w3- w3-mobile">Maps</a>
+        <a href="#footer"  class="w3-bar-item w3-button w3-right w3- w3-mobile">About</a>
+        <a href="contact.html"  class="w3-bar-item w3-button w3-right w3- w3-mobile">Contact</a>
+        <a href="Registration.html"  class="w3-bar-item w3-button w3-right w3- w3-mobile" >Register</a>
+        <a href="#login" class="w3-bar-item w3-button w3-right w3- w3-mobile">Login</a>
+    </div>
+    <div id="map"></div>
+    <button id="getLocationBtn" class="w3-button w3-block w3- w3-margin-bottom">Get My Location</button>
+    <div class="w3-row-padding" id="Introduction">
+        <div class="w3-col l4 12" id="Exhausted">
+            
+          <h1>Exhausted from endlessly seeking charging stations.</h1>
+          <h3>Try this  </h3>
+          <h6>
+            <img src="images\asset 4.webp" alt="" class="truck">
+            <p>Eager to bid farewell to frequent battery anxiety during your travels? Need a hassle-free and environmentally conscious method to power up your electric vehicle? Your quest ends now! Welcome to ChargeLink, where we're poised to transform your charging journey.</p>
+        <p class="content">Your location (Click the above button): </p>
+        <p id="locationResult" ></p>
+    </div>
+    <div class="w3-col l8 12">
+        <!-- Image of location/map -->
+        <img src="Loc.gif" class="w3-image" style="width:100%;">
+      </div>
+      <div>
+        <button id="findChargingStationsBtn" class="w3-button w3-block w3-w3-margin-bottom">Get Near By Charging Stations</button>
+    </div>
+    <div class="w3-row-padding" id="about">
+        <div>
+          <h1>Seamless Charging Experience</h1>
+            <p class="charge">At ChargeLink, we prioritize your convenience.
+                Our user-friendly mobile app and website guarantee a smooth journey to find, use, and track charging stations in real-time. Embrace hassle-free electric vehicle charging like never 
+            </p>
 
-    <section id="introduction">
-        <h2>Introduction to EV Charging Stations</h2>
-        <div class="container">
-            <ul>
-                <li>
-                    <p>Electric vehicle charging stations supply power to recharge EV batteries, extending range and reducing reliance on gasoline vehicles.</p>
-                </li>
-                <li>
-                    <p>EV adoption's success hinges on accessible charging infrastructure, leading to investments by governments and organizations.</p>
-                </li>
-                <li>
-                    <p>The Plug & Power project empowers EV owners with real-time charging station information, facilitating eco-friendly transportation.</p>
-                </li>
-            </ul>
-            <div class="info">
-                <img src="/assets/asset 3.webp" alt="Charge Station">
-                <p><b>The transition to electric mobility is a promising global strategy for decarbonizing the transport sector. India is among a handful of countries that support the global EV30@30 campaign, which targets to have at least 30% new vehicle sales be electric by 2030.</b></p>
-            </div>
-        </div>
-    </section>
+                <p><b>Vast Network Access::</b> hoose ChargeLink and unlock a vast network of conveniently located charging stations. Whether you're maneuvering through city streets or setting off on a road adventure, discovering a nearby charging station has never been this effortless.</p>
+                
+                <p><b>Rapid Charging Speeds: </b> Bid farewell to extended waiting periods. ChargeLink collaborates with high-speed charging stations, guaranteeing swift recharging and getting you back on the road promptly. Maximize your journey time and minimize charging intervals with us..</p>
+                
+                <p><b>Eco-Friendly Solution:</b> Reduce your carbon footprint and contribute to a cleaner environment. ChargeLink promotes sustainable transportation by supporting electric vehicle adoption and reducing greenhouse gas emissions.</p>
+                
+                <p><b>Sustainable Solution:</b> Shrink your carbon footprint and play a part in a cleaner world. ChargeLink champions sustainable transportation by advocating for electric vehicle adoption and curbing greenhouse gas emissions.</p>
+                
+                <p><b>Transparent Pricing:</b> Bid farewell to pricing surprises. ChargeLink ensures complete clarity regarding charging costs, empowering you to make well-informed decisions and proficiently manage your budget.</p>
+                
+                <p><b>Safety and Reliability at Forefront:</b> Your security and data privacy take precedence at ChargeLink. We offer secure payment choices and a dependable network of charging partners, guaranteeing a charging experience devoid of concerns.</p>
+                
+                <p><h1>🔌 Become a Part of the Electric Evolution Today! 🔌.</h1></p>
+    </div>
+    <div class="login-form" id="login">
+        <h2 style="text-align: center;">Login</h2>
+    <form id="loginForm" class="loginForm">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <input type="submit" value="Login"><br><br>
+    </form>
+    
 
-    <section id="types">
-        <h2>Types of Charging Stations</h2>
-        <p>There are several types of electric vehicle charging stations available to cater to different charging needs:</p>
-        <p>Manual:
-            The battery swapping station is a standalone device,
-            in which batteries are placed and removed manually
-            from the individual slots, usually by hand. Manual
-            swapping stations are modular and occupy a minimal
-            amount of space. These are used for 2W and 3W
-            battery applications, as the battery pack sizes are smaller
-            and the weight can be handled by one or two persons.</p>
-        <p>
-            Autonomous:
-            A robotic arm is used in these types of swapping
-            stations with the battery swapping process being
-            semi/fully automated. Robotic swapping is used for
-            4W and e-bus applications as battery packs are larger
-            and heavier, and require mechanical assistance. These
-            swapping stations are also more expensive and have a
-            higher land requirement.
-        </p>
-        <ul>
-            <li><strong>Level 1 Charging:</strong> This is the basic charging method that uses a standard household electrical outlet. It's suitable for overnight charging but relatively slow.</li>
-            <li><strong>Level 2 Charging:</strong> A faster charging option, often found at public charging stations and residential installations. Requires a dedicated charging unit.</li>
-            <li><strong>DC Fast Charging:</strong> Provides rapid charging at public stations, allowing significant charge within a short time. Commonly located along highways.</li>
-        </ul>
-    </section>
-
-    <section id="benefits">
-        <h2>Benefits of EV Charging Stations</h2>
-        <div class="container1">
-            <ul >
-                <li><strong>Lower Running Costs:</strong> The running cost of an electric vehicle is much lower than an equivalent petrol or diesel vehicle. Electric vehicles use electricity to charge their batteries instead of using fossil fuels like petrol or diesel. Electric vehicles are more efficient, and that combined with the electricity cost means that charging an electric vehicle is cheaper than filling petrol or diesel for your travel requirements. Using renewable energy sources can make the use of electric vehicles more eco-friendly. The electricity cost can be reduced further if charging is done with the help of renewable energy sources installed at home, such as solar panels.</li>
-                <li><strong>Environmental Benefits:</strong> EVs produce fewer emissions, contributing to reduced air pollution and greenhouse gas emissions.</li>
-                <li><strong>Cost Savings:</strong> Charging an EV is often cheaper than refueling a gasoline vehicle, leading to long-term cost savings.</li>
-                <li><strong>Convenience:</strong> Home charging and increasing public charging infrastructure make owning an EV convenient for daily use.</li>
-            </ul>
-            <ul style="list-style: none;">
-           <li> <div class="image-left">
-                <img src="assets/asset 6.webp" alt="Environmental Benefits" style="max-width:180px ;">
-            </div>
-        </li><li> <div class="image-right">
-                <img src="assets/low-maintenance (1).jpg" alt="Cost Savings" style="max-width:180px ;">
-            </div></li></ul>
-        </div>
-    </section>
-
-    <section id="plug-power">
-        <h2>Plug & Power: Empowering EV Owners</h2>
-        <div class="container2">
-            <p>The Plug & Power project aims to empower electric vehicle owners...</p>
-            <div class="plug-power-images">
-                <div class="image-left">
-                    <img src="assets/Screen Shot 2016-06-06 at 11.56.16 AM.png" alt="Plug & Power Project">
-                </div>
-                <div class="image-right">
-                    <img src="assets/asset 2 copy.webp" alt="Empowerment">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="charging-data">
-        <h2>Charging Data</h2>
-        <form id="charging-form">
-            <label for="station-name">Charging Station Name:</label>
-            <input type="text" id="station-name" required><br>
-
-            <label for="billing">Billing Information:</label>
-            <input type="text" id="billing" required><br>
-
-            <label for="charging-type">Charging Type:</label>
-            <select id="charging-type" required>
-                <option value="level-1">Level 1 Charging</option>
-                <option value="level-2">Level 2 Charging</option>
-                <option value="dc-fast">DC Fast Charging</option>
-            </select><br>
-
-            <label for="charging-time">Charging Time (in hours):</label>
-            <input type="number" id="charging-time" required><br>
-
-            <button type="button" id="submit-btn">Submit</button>
-        </form>
-    </section>
-
-    <section id="battery-range">
-        <h2>Battery Range Calculator</h2>
-        <label for="current-battery">Current Battery Level (%):</label>
-        <input type="number" id="current-battery" min="0" max="100" required><br>
-
-        <label for="destination">Destination Charging Station:</label>
-        <input type="text" id="destination" required><br>
-
-        <p id="range-result"></p>
-    </section>
-
-    <footer>
-        <p>&copy; 2023 Plug & Power</p>
-    </footer>
+</div>
+<!-- footer -->
+<div class="cpy-right-agile-w3ls" id="footer">
+<h2>About Us</h2>
+<p> Discover Nearby Charging Stations Website. All rights reserved | Designed by @ Divyansh Shrivastava @ 2023 </p>
+<p>Welcome to the platform dedicated to locating nearby charging stations in India. Our website specializes in offering the finest charging stations in your vicinity, within a limited selection. This initiative is part of a project undertaken by the Megawatt Militia Team and is currently under careful consideration. </p>
+<p> For any quaries or issues. Please Contact below:</p>
+<ul>
+    <li>
+        <a href="https://www.linkedin.com/in/divyansh-srivastav-a00127221/">LinkedIn</a>
+    </li>
+    <li>
+        <a href="https://www.instagram.com/#">Instagram</a>
+    </li>
+    <li>
+        <a href="contact.html">Contact</a>
+    </li>
+</ul>
+</div>
 </body>
+<script src="script.js"></script>
 </html>
