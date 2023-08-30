@@ -1,1 +1,171 @@
-body { font-family: Arial, sans-serif; margin: 0; padding: 0; } .container { max-width: 960px; margin: 0 auto; padding: 20px; } header { background-color: #333; color: #fff; padding: 10px; } header h1 { margin: 0; } nav ul { list-style-type: none; margin: 0; padding: 0; } nav ul li { display: inline; margin-right: 20px; } nav ul li a { color: #fff; text-decoration: none; } section { padding: 40px 0; text-align: center; } section h2 { margin-bottom: 20px; } .btn { display: inline-block; padding: 10px 20px; background-color: #333; color: #fff; text-decoration: none; border: none; border-radius: 5px; } footer { background-color: #333; color: #fff; text-align: center; padding: 10px; }
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;800&display=swap');
+/* Reset some default styles for consistency */
+/* Your CSS styles here */
+
+body {
+    font-family: 'Mulish', sans-serif;
+    margin: 0;
+    padding: 0;
+ /* Replace with your image path */
+ background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+
+    /* Adjust to fit your design */
+    background-position: center; /* Adjust to position the image */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+}
+h2{
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+}
+
+header {
+    background-color: #8be67d;
+    color: #260254;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 36px;
+    color: #181f0f;
+    font-family: 'Mulish', sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    border-bottom: 1px solid #ccc;
+    
+}
+.container p{
+    font-family: 'Mulish', sans-serif;
+    padding: auto;
+    align-items: center;
+}
+.info {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.info h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-family: 'Mulish', sans-serif;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+section p {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+footer {
+    background-color: hsl(0, 12%, 5%);
+    color: #fff;
+    text-align: center;
+    color: #188e26;
+    padding: 10px;
+}
+
+/* Styling for the Charging Data form */
+#charging-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#charging-form label,
+#charging-form input,
+#charging-form select {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#submit-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#submit-btn:hover {
+    background-color: #555;
+}
+
+/* Styling for the Battery Range Calculator */
+#battery-range label,
+#battery-range input,
+#battery-range select {
+    display: block;
+    margin-bottom: 10px;
+}
+.container1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+.benefits-image {
+    flex: 1;
+    max-width: 50%;
+}
+
+#range-result {
+    font-weight: bold;
+}
+.container2 {
+    padding: 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+.plug-power-images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.image-left,
+.image-right {
+    flex-basis: calc(50% - 10px);
+    max-width: 50%;
+}
+
+.image-left img,
+.image-right img {
+    max-width: 100%;
+    height: auto;
+}
